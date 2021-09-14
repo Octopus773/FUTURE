@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>FUTURE - Pirate</title>
+	<link rel="stylesheet" href="../css/cloudflare.css">
+	<link rel='stylesheet prefetch' href='../css/cloudflare2.css'>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="shortcut icon" href="../iconeF.ico">
+	<script src="../Cartes/jscartes.js"></script>
+</head>
+<body>
+	<header>
+		<h1>FUTURE - PIRATE</h1>
+	</header>
+	 <nav> 
+		<h3>Sommaire</h3> 
+		<a href="regles.html"><div class="pure-button fuller-button white">Règles</div></a> 
+		<a href="contacts.html"><div class="pure-button fuller-button white">Histoire</div></a> 
+		<a href="credits.html"><div class="pure-button fuller-button white">Crédits</div></a>
+		<a href="mondes.html"><div class="pure-button fuller-button white">Mondes</div></a> 
+	</nav>
+	<section>
+	<div>
+		<center><img src="banniere.png" height = 240 width = 400></center>
+	</div>
+  
+	<div class="flex-grid-center">
+		<a onclick="redirect()"><div class="pure-button fuller-button white">PRENDRE LA MER</div></a>
+	</div>
+	</section>
+	<script>
+	sessionStorage.setItem("religion", 10)
+	sessionStorage.setItem("armee", 10)
+	sessionStorage.setItem("peuple", 10)
+	sessionStorage.setItem("finances", 10)
+	sessionStorage.setItem("Jour", 1)
+	window.onload = zero ()
+		var urls = new Array("carte1.html", "carte6.html", "carte2.html","carte3.html", "carte4.html", "carte5.html","carte7.html", "carte8.html", "carte9.html","carte10.html");
+
+	function redirect()
+	{
+		window.location = urls[Math.floor(urls.length*Math.random())];
+	}
+	</script>
+	<aside> 
+		<br>
+		<br>
+		<h3><center>Oyez Mousaillon !</center></h3> 
+		<br><p>Version 1 . 2 nouveautées :</p>
+		<br>- Ajout de cartes
+		<br>- Nouveau monde
+		<br>- Succès
+		<br>- Améliorations
+		<br>
+		<center><p>Meilleur score sur ce poste :<p></center><br>
+		<script type="text/javascript">document.write(Joueur)</script> &nbsp; : &nbsp;<script type="text/javascript">document.write(Score)</script>&nbsp;jours vécus
+		<br>
+		<br>
+		<br>
+		<br>PS : A L'ABORDAGE !!!
+		<br>
+		<br>
+		<br>
+		<br>
+	</aside>
+</body>
+</html>

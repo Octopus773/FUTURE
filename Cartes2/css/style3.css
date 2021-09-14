@@ -1,0 +1,209 @@
+@font-face{
+    font-family: "BlackPearl";
+    src: url("BlackPearl.ttf");
+    src: url('BlackPearl.eot');
+    src: url('BlackPearl.eot?#iefix') format('embedded-opentype'),
+        url('BlackPearl.woff2') format('woff2'),
+        url('BlackPearl.woff') format('woff'),
+        url('BlackPearl.svg#BlackPearl') format('svg');
+}
+
+html { 
+  background: url(bodyfond3.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: "BlackPearl";
+}
+
+header h1 {
+	text-align: center;
+	font-size : 300%;
+}
+
+ 
+nav h3 { 
+        margin: 15px; 
+        color: #000; 
+}
+nav { 
+        display:block; 
+        width:20%; 
+        float:left; 
+}
+
+section { 
+        display:block; 
+        width:58%; 
+        float:left; 
+}
+
+aside { 
+        display:block; 
+        width:18%; 
+		text-align: center;
+        float:right;
+		background-image: url(fondaside.png); 
+		 -webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+
+} 
+aside h3 { 
+        margin: 15px; 
+        color: #000;
+		
+} 
+aside p { 
+        margin: 15px; 
+        color: #000; 
+        font-weight: bold; 
+         
+}
+
+a span{
+     position:absolute;
+     margin-top:60px;
+     margin-left:-35px;
+}
+
+a span{
+     color:#F8F8FF;
+     background:rgba(0,0,0,.9);
+     padding:15px;
+     border-radius:3px;
+     box-shadow:0 0 2px rgba(0,0,0,.5);
+}
+
+a span{
+      transform:scale(0) rotate(-12deg);
+	  transition:all .25s;
+}
+
+a:hover span, a:focus span{
+     transform:scale(1) rotate(0);        
+}
+
+.scores {
+	text-align:center;
+}
+
+.flex-grid-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 5em 0;
+}
+
+.fuller-button {
+  color: white;
+  background: none;
+  border-radius: 0;
+  padding: 1.2em 5em;
+  letter-spacing: 0.35em;
+  font-size: 0.7em;
+  -webkit-transition: background-color 0.3s, box-shadow 0.3s, color 0.3s;
+  transition: background-color 0.3s, box-shadow 0.3s, color 0.3s;
+  margin: 1em;
+
+}
+.fuller-button.blue {
+  box-shadow: inset 0 0 1em rgba(0, 170, 170, 0.5), 0 0 1em rgba(0, 170, 170, 0.5);
+  border: #0dd solid 2px;
+}
+.fuller-button.blue:hover {
+  background-color: #0dd;
+  box-shadow: inset 0 0 0 rgba(0, 170, 170, 0.5), 0 0 1.5em rgba(0, 170, 170, 0.7);
+}
+.fuller-button.red {
+  box-shadow: inset 0 0 1em rgba(251, 81, 81, 0.4), 0 0 1em rgba(251, 81, 81, 0.4);
+  border: #fb5454 solid 2px;
+}
+.fuller-button.red:hover {
+  background-color: #fb5454;
+  box-shadow: inset 0 0 0 rgba(251, 81, 81, 0.4), 0 0 1.5em rgba(251, 81, 81, 0.6);
+}
+.fuller-button.white {
+  background-image: url(panneauxbois.png);
+  -webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+}
+.fuller-button.white:hover {
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.pure-control-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: relative;
+  padding: 0 1em 2.6em 1em;
+}
+
+.pure-form .pure-control-group label {
+  text-align: left;
+  position: absolute;
+  left: 0;
+  top: 15%;
+  z-index: 0;
+  letter-spacing: 0;
+  margin: 0 1em;
+}
+
+.pure-form .pure-control-group input {
+  background: none;
+  box-shadow: none;
+  padding-left: 0;
+  border-radius: 0;
+  border: none;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.4);
+  position: relative;
+  z-index: 1;
+  color: #fff;
+}
+
+.pure-form .pure-control-group input:focus {
+  border-bottom: 2px solid white;
+}
+
+.pure-form .pure-control-group textarea {
+  background: none;
+  box-shadow: none;
+  border-radius: 0;
+  border: none;
+  border-left: 2px solid rgba(255, 255, 255, 0.4);
+  resize: none;
+  height: 8em;
+  color: #fff;
+}
+
+.pure-form .pure-control-group textarea:focus {
+  border-left: 2px solid white;
+}
+
+.pure-form .pure-control-group input[type=email]:focus:invalid {
+  color: #fff;
+}
+
+.pure-form .pure-control-group input[type=email]:invalid {
+  color: #fb5454;
+}
+
+.pure-form button {
+  margin: 0.5em 1em;
+}
+:link:hover
+{
+	text-decoration:none;
+}

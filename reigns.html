@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>FUTURE</title>
+	<link rel="stylesheet" href="css/cloudflare.css">
+	<link rel='stylesheet prefetch' href='css/cloudflare2.css'>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="shortcut icon" href="iconeF.ico">
+	<script src="Cartes/jscartes.js"></script>
+</head>
+<body>
+	<header>
+		<h1>FUTURE</h1>
+	</header>
+	 <nav> 
+		<h3>Sommaire</h3> 
+		<a href="Cartes/regles.html"><div class="pure-button fuller-button white">Règles</div></a> 
+		<a href="Cartes/contacts.html"><div class="pure-button fuller-button white">Histoire</div></a> 
+		<a href="Cartes/credits.html"><div class="pure-button fuller-button white">Crédits</div></a>
+		<div id="mondes" class="mondes"><a href="Cartes/mondes.html"><div class="pure-button fuller-button white">Mondes</div></a></div> 
+	</nav>
+	<section>
+	<div>
+		<center><img src="logopageacceuil.jpg" height = 300 width = 700></center>
+	</div>
+  
+	<div class="flex-grid-center">
+		<a onclick="redirect()"><div class="pure-button fuller-button white">JOUER</div></a>
+	</div>
+	<br>
+	<br>
+	<br>
+		<!-- <a onclick="suppr()"><div class="pure-button fuller-button white">Retire valeur</div></a> -->
+	</section>
+	<script>
+	sessionStorage.setItem("religion", 10)
+	sessionStorage.setItem("armee", 10)
+	sessionStorage.setItem("peuple", 10)
+	sessionStorage.setItem("finances", 10)
+	sessionStorage.setItem("Jour", 1)
+	window.onload = zero ()
+	window.onload = zeropiece ()
+		var urls = new Array("Cartes/carte1.html", "Cartes/carte2.html", "Cartes/carte3.html", "Cartes/carte4.html", "Cartes/carte5.html", "Cartes/carte6.html", "Cartes/carte7.html", "Cartes/carte8.html", "Cartes/carte9.html", "Cartes/carte10.html", "Cartes/carte11.html", "Cartes/carte12.html", "Cartes/carte13.html", "Cartes/carte14.html", "Cartes/carte15.html", "Cartes/carte16.html", "Cartes/carte17.html", "Cartes/carte18.html", "Cartes/carte19.html", "Cartes/carte20.html");
+
+	function redirect()
+	{
+		window.location = urls[Math.floor(urls.length*Math.random())];
+	}
+	
+		function piece () {
+				switch(nbpiece)  {
+			case 3 :
+				document.getElementById('imagemach').innerHTML = "Vous avez toutes les pièces"
+				break;
+			case 2 :
+				document.getElementById('mondes').style.visibility="hidden";
+				document.getElementById('imagemach').innerHTML = "Vous avez deux pièces"
+				break;
+			case 1 :
+				document.getElementById('mondes').style.visibility="hidden";
+				document.getElementById('imagemach').innerHTML = "Vous avez une pièce"
+				break;
+			default :
+				document.getElementById('mondes').style.visibility="hidden";
+				document.getElementById('imagemach').innerHTML = "Vous n'avez pas de pièce"
+			}
+
+	}
+		
+	</script>
+	<aside> 
+		<h3><center>Infos pratiques</center></h3> 
+		<br><p>Version 1.2 nouveautées :</p>
+		<br>- Ajout de cartes
+		<br>- Nouveau monde
+		<br>- Succès
+		<br>- Améliorations
+		<br>
+		<center><p>Meilleur score sur ce poste :<p></center><br>
+		<script type="text/javascript">document.write(Joueur)</script> &nbsp; : &nbsp;<script type="text/javascript">document.write(Score)</script>&nbsp;jours vécus
+		<br>
+		<br>
+		<br>
+		<p id="imagemach" ></p>
+		<script>window.onload = piece ()</script>
+	</aside>
+</body>
+</html>

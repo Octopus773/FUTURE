@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html >
+<head>
+	<meta charset="UTF-8">
+	<title>FUTURE - GAME OVER</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+	<link rel='stylesheet prefetch' href='http://cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/pure-min.css'>
+	<link rel="stylesheet" href="css/style.css">
+	<script src="jscartes.js"></script>
+	<link rel="shortcut icon" href="../iconeF.ico">
+  </head>
+<body>
+	<header>
+		<h1>FUTURE</h1>
+	</header>
+	 <nav> 
+		<h3>Si vous avez aimé ce site trop génial n'hésitez pas à le partager autour de vous</h3>
+	</nav>
+	<section>
+	<div>
+		<center>GAME OVER</center>
+		<br>
+		<br>
+		<br>
+		<center><div>Vous êtes victime d'un manque de vie provoqué par : TOI !<br>
+		En faisant des choix de merde !</div></center>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<center><a href="../reigns.html"><div class="pure-button fuller-button white">Accueil</div></a></center>
+		<br>
+		<div id="record" class="record">
+		<br><center><p>Vous avez battu le record ! Sauvegardez votre progression</p></center>
+		<br>
+		<center><input id="text" type="text" size="20" maxlength="22" value="Joueur" /></center>
+
+		<br><center><a onclick="sauvegarde()"><div class="pure-button fuller-button white">Sauvegarder</div></a></center>
+		</div>
+		<script>
+		window.onload = afficher_cacher('record');
+		window.onload = test('record');
+		</script>
+		<!-- <br><center><a onclick=afficher_cacher("record")><div class="pure-button fuller-button white">Cacher</div></a></center> -->
+	</div> 
+
+	</section>
+	<aside> 
+		<h3><center>Données</center></h3> 
+		<p>Vie</p>
+		<p id="123"></p>
+		<script type="text/javascript">document.write(perdu)</script>
+		<p>Nourriture</p>
+		<script type="text/javascript">document.write(armee)</script>
+		<p>Repos</p>
+		<script type="text/javascript">document.write(peuple)</script>
+		<p>Mental</p>
+		<script type="text/javascript">document.write(finances)</script>
+		<br>
+		<br>
+		<br>
+		<p>Nombre de jours vécus</p>
+		<script type="text/javascript">document.write(Jour)</script>
+	</aside>
+
+	<!--form.pure-form
+.pure-control-group.pure-u-1
+	label(for="name") NAME
+	input.form-control#form-name(name="name" type="text")
+-->
+
+</body>
+</html>
