@@ -1,6 +1,6 @@
 # FUTURE
 
-FUTURE is on a project I did with Antoine Deyris in 9th grade (3ème)
+FUTURE is an old project I did with [Antoine Deyris (@RedDTG)](https://github.com/RedDTG) in 9th grade (3ème)
 
 ## Try it
 
